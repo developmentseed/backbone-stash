@@ -19,7 +19,7 @@ module.exports = function(filepath) {
     };
 
     // Sync implementation for `stash`.
-    return function(method, model, success, error) {
+    var sync = function(method, model, success, error) {
         switch (method) {
         case 'read':
             var data,
@@ -61,5 +61,7 @@ module.exports = function(filepath) {
             break;
         }
     };
+
+    return { stash: stash, sync: sync };
 };
 
