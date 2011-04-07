@@ -1,12 +1,19 @@
 {
-    "name": "backbone-stash",
-    "version": "0.0.3",
-    "author": "Young Hahn",
-    "dependencies": {
-        "underscore": "= 1.1.5",
-        "backbone": "= 0.3.3",
-        "stash": "= 0.0.2"
-    },
-    "licenses": [{ "type": "BSD" }],
-    "main": "./backbone-stash"
+  "name": "backbone-stash",
+  "version": "0.0.4",
+  "author": "Young Hahn",
+  "dependencies": {
+    "underscore": "= 1.1.5",
+    "backbone": "= 0.3.3",
+    "stash": "= 0.0.2"
+  },
+  "licenses": [
+    {
+      "type": "BSD"
+    }
+  ],
+  "main": "./backbone-stash",
+  "engines": {
+    "node": "*"
+  }
 }
