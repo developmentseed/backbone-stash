@@ -1,0 +1,10 @@
+{
+    "name": "backbone-stash",
+    "version": "0.0.3",
+    "author": "Young Hahn",
+    "dependencies": {
+        "stash": "= 0.0.2"
+    },
+    "licenses": [{ "type": "BSD" }],
+    "main": "./backbone-stash"
+}
