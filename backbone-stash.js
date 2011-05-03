@@ -2,8 +2,7 @@
 // context. Uses `stash` for model persistence. Models are expected to
 // have a URL prefixed by their respective collection (e.g. `/{class}/{id}`)
 // and Collections retrieve their respective models based on this convention.
-var _ = require('underscore')._,
-    Backbone = require('backbone');
+var _ = require('underscore');
 
 module.exports = function(filepath) {
     var stash = require('stash')(filepath);
