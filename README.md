@@ -4,8 +4,8 @@ Server-side overrides for Backbone to use `stash` for Model persistence.
 
 ### Compatibility
 
-    documentcloud backbone 0.3.3
-    developmentseed stash 0.0.1
+    documentcloud backbone 0.5.1
+    developmentseed stash 0.0.2
 
 ### Usage
 
