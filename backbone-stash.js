@@ -18,7 +18,12 @@ module.exports = function(filepath) {
     };
 
     // Sync implementation for `stash`.
-    var sync = function(method, model, success, error) {
+    var sync = function(method, model, options) {
+        var options = options || {};
+
+        var success = options.success,
+            error = options.error;
+
         switch (method) {
         case 'read':
             var data,
