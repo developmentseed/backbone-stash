@@ -42,13 +42,13 @@ module.exports = function(filepath) {
         case 'create':
         case 'update':
             if (_.isEqual(stash.get(getUrl(model)), model.toJSON())) {
-                return success({});
+                return success(model.toJSON());
             }
             stash.set(
                 getUrl(model),
                 model.toJSON(),
                 function(err) {
-                    return err ? error(err) : success({});
+                    return err ? error(err) : success(model.toJSON());
                 }
             );
             break;
